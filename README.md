@@ -2,7 +2,7 @@
 
 ## Presentation
 
-[Presentation](gopher_go_data_v2.pdf)
+[Gopher go data!](gopher_go_data_v2.pdf)
 
 The presentation covers:
 
