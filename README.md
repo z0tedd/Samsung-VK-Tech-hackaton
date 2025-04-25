@@ -1,5 +1,36 @@
 # TPC-H Query Optimization Project
 
+## Presentation
+
+[Presentation](gopher_go_data_v2.pdf)
+
+The presentation covers:
+
+- Project overview
+- Optimization strategies
+- Performance results
+- Key learnings
+
+## Query Performance Results
+
+| Query | Original Time | Optimized Time | Optimization (%) |
+| ----- | ------------- | -------------- | ---------------- |
+| Q1    | 2m13s         | 1m45s          | 21%              |
+| Q2    | 41s           | 25s            | 39%              |
+| Q3    | 3m35s         | 17s            | 92%              |
+| Q5    | 6m34s         | 39s            | 90%              |
+| Q6    | 1m33s         | 5s             | 95%              |
+| Q7    | 6m            | 3s             | 99%              |
+| Q8    | 4m15s         | 5s             | 98%              |
+| Q11   | 33s           | 17s            | 49%              |
+| Q12   | 2m16s         | 51s            | 62%              |
+| Q13   | 3m45s         | 3s             | 99%              |
+| Q14   | 2m30s         | 18s            | 91%              |
+| Q17   | 5m            | 6s             | 98%              |
+| Q19   | 2m45s         | 2s             | 99%              |
+| Q10\* | -             | Running        | 100%             |
+| Q22\* | -             | Running        | 100%             |
+
 ## Overview
 
 This repository contains solutions for optimizing TPC-H benchmark queries using Trino (formerly PrestoSQL) with data stored in Parquet format in S3. The project focuses on improving query performance through various optimization techniques including partitioning, indexing, and query rewriting.
